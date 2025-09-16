@@ -18,6 +18,3 @@ Project is created with:
 To view the website, click on the link below:
 
 https://akkouhlokmane.netlify.app
-
-## If you like this project, please give it a 🌟.
-## Thank you 😊.
