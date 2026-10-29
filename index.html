@@ -1,913 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>AKKOUH LOKMANE</title>
-
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="AKKOUH LOKMANE" />
-  <meta name="description"
-    content="Data Engineer | Master's in Data Science at Claude Bernard Lyon 1. Specialized in data pipelines, big data technologies, machine learning, and AI-driven solutions." />
-  <meta name="keywords"
-    content="AKKOUH LOKMANE, Data Engineer, Data Science, Master Lyon 1, Big Data, Machine Learning, Data Pipelines, AI" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://akkouhlokmane.netlify.app/" />
-  <meta property="og:title" content="AKKOUH LOKMANE" />
-  <meta property="og:description"
-    content="Data Engineer | Master's in Data Science at Claude Bernard Lyon 1. Specialized in data pipelines, big data technologies, machine learning, and AI-driven solutions." />
-  <meta property="og:image" content="https://akkouhlokmane.netlify.app/img/og-img.png" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://akkouhlokmane.netlify.app/" />
-  <meta name="twitter:creator" content="@AkkouhLokmane1" />
-  <meta property="twitter:title" content="AKKOUH LOKMANE" />
-  <meta property="twitter:description"
-    content="Data Engineer | Master's in Data Science at Claude Bernard Lyon 1. Specialized in data pipelines, big data technologies, machine learning, and AI-driven solutions." />
-  <meta property="twitter:image" content="https://akkouhlokmane.netlify.app/img/og-img.png" />
-
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="img/favicon/site.webmanifest" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://akkouhlokmane.netlify.app/" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="./css/font-root-styles/general-sans.css" />
-  <link rel="stylesheet" href="./css/font-root-styles/okinesans.css" />
-  <link rel="stylesheet" href="./css/font-root-styles/satoshi.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8ede2">
+  <title>Lokmane Akkouh — Data &amp; AI Engineer</title>
+  <meta name="description" content="Lokmane Akkouh, Data &amp; AI Engineer. Production pipelines, Databricks lakehouses, data quality and AI applications. Experience at SOCOTEC and selected projects.">
+  <link rel="canonical" href="https://akkouhlokmane.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akkouhlokmane.netlify.app/">
+  <meta property="og:title" content="Lokmane Akkouh — Data &amp; AI Engineer">
+  <meta property="og:description" content="Reliable pipelines. Useful data. Discover my work with Databricks, PySpark and production data platforms.">
+  <meta property="og:image" content="https://akkouhlokmane.netlify.app/img/brand/v2/lokmane-akkouh-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lokmane Akkouh — Data &amp; AI Engineer, with a folded abstract symbol">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lokmane Akkouh — Data &amp; AI Engineer">
+  <meta name="twitter:description" content="Production pipelines, Databricks lakehouses and data quality. Experience and selected projects.">
+  <meta name="twitter:image" content="https://akkouhlokmane.netlify.app/img/brand/v2/lokmane-akkouh-social.png">
+  <meta name="twitter:image:alt" content="Lokmane Akkouh — Data &amp; AI Engineer, with a folded abstract symbol">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/brand/v2/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/brand/v2/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/brand/v2/lokmane-akkouh-favicon.svg">
+  <link rel="manifest" href="img/favicon/site.webmanifest?v=5">
+  <link rel="preload" href="fonts/satoshi/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/general-sans/GeneralSans-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=20261029-17">
+  <link rel="stylesheet" href="css/diagram-viewer.css?v=2">
+  <script src="js/main.js?v=20261029-3" defer></script>
+  <script src="js/diagram-viewer.js?v=2" defer></script>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="/">
-        <h1>
-          <span class="logo">LOKMANE</span>
-        </h1>
-      </a>
-
-      <ul class="nav-menu">
-        <li class="nav-link">
-          <a href="#about">About</a>
-        </li>
-
-        <li class="nav-link">
-          <a href="#education">Education</a>
-        </li>
-
-        <li class="nav-link">
-          <a href="#experience">Experience</a>
-        </li>
-
-        <li class="nav-link">
-          <a href="#projects">Projects</a>
-        </li>
-
-        <li class="nav-link">
-          <a href="#skills">Skills</a>
-        </li>
-
-        <li class="nav-link">
-          <a href="#contact">Contact</a>
-        </li>
-
-        <li class="nav-link cv-dropdown">
-          <a href="#" class="cv-trigger">Resume</a>
-          <div class="cv-dropdown-menu">
-            <a href="CV/CV_eng.pdf" target="_blank" class="cv-option">
-              <span class="flag">🇬🇧</span> English
-            </a>
-            <a href="CV/CV_fr.pdf" target="_blank" class="cv-option">
-              <span class="flag">🇫🇷</span> Français
-            </a>
-          </div>
-        </li>
-
-        <li class="nav-social-links social-links">
-          <a href="https://github.com/lokmane101" target="_blank" class="social github">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-              width="50px" height="50px">
-              <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <g transform="scale(4,4)">
-                  <path
-                    d="M32,6c-14.359,0 -26,11.641 -26,26c0,12.277 8.512,22.56 19.955,25.286c-0.592,-0.141 -1.179,-0.299 -1.755,-0.479v-5.957c0,0 -0.975,0.325 -2.275,0.325c-3.637,0 -5.148,-3.245 -5.525,-4.875c-0.229,-0.993 -0.827,-1.934 -1.469,-2.509c-0.767,-0.684 -1.126,-0.686 -1.131,-0.92c-0.01,-0.491 0.658,-0.471 0.975,-0.471c1.625,0 2.857,1.729 3.429,2.623c1.417,2.207 2.938,2.577 3.721,2.577c0.975,0 1.817,-0.146 2.397,-0.426c0.268,-1.888 1.108,-3.57 2.478,-4.774c-6.097,-1.219 -10.4,-4.716 -10.4,-10.4c0,-2.928 1.175,-5.619 3.133,-7.792c-0.2,-0.567 -0.533,-1.714 -0.533,-3.583c0,-1.235 0.086,-2.751 0.65,-4.225c0,0 3.708,0.026 7.205,3.338c1.614,-0.47 3.341,-0.738 5.145,-0.738c1.804,0 3.531,0.268 5.145,0.738c3.497,-3.312 7.205,-3.338 7.205,-3.338c0.567,1.474 0.65,2.99 0.65,4.225c0,2.015 -0.268,3.19 -0.432,3.697c1.898,2.153 3.032,4.802 3.032,7.678c0,5.684 -4.303,9.181 -10.4,10.4c1.628,1.43 2.6,3.513 2.6,5.85v8.557c-0.576,0.181 -1.162,0.338 -1.755,0.479c11.443,-2.726 19.955,-13.009 19.955,-25.286c0,-14.359 -11.641,-26 -26,-26zM33.813,57.93c-0.599,0.042 -1.203,0.07 -1.813,0.07c0.61,0 1.213,-0.029 1.813,-0.07zM37.786,57.346c-1.164,0.265 -2.357,0.451 -3.575,0.554c1.218,-0.103 2.411,-0.29 3.575,-0.554zM32,58c-0.61,0 -1.214,-0.028 -1.813,-0.07c0.6,0.041 1.203,0.07 1.813,0.07zM29.788,57.9c-1.217,-0.103 -2.411,-0.289 -3.574,-0.554c1.164,0.264 2.357,0.451 3.574,0.554z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </a>
-
-          <a href="https://linkedin.com/in/lokmane-akkouh" target="_blank" class="social linkedin">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-              width="50px" height="50px">
-              <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <g transform="scale(5.12,5.12)">
-                  <path
-                    d="M9,4c-2.74952,0 -5,2.25048 -5,5v32c0,2.74952 2.25048,5 5,5h32c2.74952,0 5,-2.25048 5,-5v-32c0,-2.74952 -2.25048,-5 -5,-5zM9,6h32c1.66848,0 3,1.33152 3,3v32c0,1.66848 -1.33152,3 -3,3h-32c-1.66848,0 -3,-1.33152 -3,-3v-32c0,-1.66848 1.33152,-3 3,-3zM14,11.01172c-1.09522,0 -2.08078,0.32736 -2.81055,0.94141c-0.72977,0.61405 -1.17773,1.53139 -1.17773,2.51367c0,1.86718 1.61957,3.32281 3.67969,3.4668c0.0013,0.00065 0.0026,0.0013 0.00391,0.00195c0.09817,0.03346 0.20099,0.05126 0.30469,0.05273c2.27301,0 3.98828,-1.5922 3.98828,-3.52148c-0.00018,-0.01759 -0.00083,-0.03518 -0.00195,-0.05274c-0.10175,-1.90023 -1.79589,-3.40234 -3.98633,-3.40234zM14,12.98828c1.39223,0 1.94197,0.62176 2.00195,1.50391c-0.01215,0.85625 -0.54186,1.51953 -2.00195,1.51953c-1.38541,0 -2.01172,-0.70949 -2.01172,-1.54492c0,-0.41771 0.15242,-0.7325 0.47266,-1.00195c0.32023,-0.26945 0.83428,-0.47656 1.53906,-0.47656zM11,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-5.86523v-13.13477c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM20,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10c0,-0.82967 0.22639,-1.65497 0.625,-2.19531c0.39861,-0.54035 0.90147,-0.86463 1.85742,-0.84766c0.98574,0.01695 1.50758,0.35464 1.90234,0.88477c0.39477,0.53013 0.61523,1.32487 0.61523,2.1582v10c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10.73828c0,-2.96154 -0.87721,-5.30739 -2.38086,-6.89453c-1.50365,-1.58714 -3.59497,-2.36719 -5.80664,-2.36719c-2.10202,0 -3.70165,0.70489 -4.8125,1.42383v-0.42383c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM12,21h4v12.13477v4.86523h-4zM21,21h4v1.56055c0.00013,0.43 0.27511,0.81179 0.68291,0.94817c0.40781,0.13638 0.85714,-0.00319 1.11591,-0.34661c0,0 1.57037,-2.16211 5.01367,-2.16211c1.75333,0 3.25687,0.58258 4.35547,1.74219c1.0986,1.15961 1.83203,2.94607 1.83203,5.51953v9.73828h-4v-9c0,-1.16667 -0.27953,-2.37289 -1.00977,-3.35352c-0.73023,-0.98062 -1.9584,-1.66341 -3.47266,-1.68945c-1.52204,-0.02703 -2.77006,0.66996 -3.50195,1.66211c-0.73189,0.99215 -1.01562,2.21053 -1.01562,3.38086v9h-4z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </a>
-
-          <a href="https://twitter.com/AkkouhLokmane1" target="_blank" class="social twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-              width="50px" height="50px">
-              <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <g transform="scale(5.12,5.12)">
-                  <path
-                    d="M11,4c-3.85433,0 -7,3.14567 -7,7v28c0,3.85433 3.14567,7 7,7h28c3.85433,0 7,-3.14567 7,-7v-28c0,-3.85433 -3.14567,-7 -7,-7zM11,6h28c2.77367,0 5,2.22633 5,5v28c0,2.77367 -2.22633,5 -5,5h-28c-2.77367,0 -5,-2.22633 -5,-5v-28c0,-2.77367 2.22633,-5 5,-5zM13.08594,13l9.22266,13.10352l-9.30859,10.89648h2.5l7.9375,-9.29297l6.53906,9.29297h7.9375l-10.125,-14.38672l8.21094,-9.61328h-2.5l-6.83984,8.00977l-5.63672,-8.00977zM16.91406,15h3.06445l14.10742,20h-3.06445z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </a>
-
-          <a href="mailto:lokmaneakkouh10@gmail.com" target="_blank" class="social behance">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-              width="50px" height="50px">
-              <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <g transform="scale(5.12,5.12)">
-                  <path
-                    d="M43.75391,6.40234c-1.2177,-0.05335 -2.45911,0.31055 -3.48242,1.06641l-2.74609,2.02734l-12.52539,9.25977l-12.4082,-9.17187c-0.17292,-0.16897 -0.4012,-0.26957 -0.64258,-0.2832h0.25l-2.46484,-1.82422c-1.02397,-0.75773 -2.26723,-1.12367 -3.48633,-1.07031c-1.2191,0.05336 -2.4131,0.52522 -3.33984,1.43945c-1.17726,1.16068 -1.9082,2.78413 -1.9082,4.56445v3.43359c-0.01457,0.09777 -0.01457,0.19715 0,0.29492v23.36133c0,1.92119 1.57881,3.5 3.5,3.5h7.5c0.55226,-0.00006 0.99994,-0.44774 1,-1v-16.62695l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0l11.40625,-8.43164v16.62695c0.00006,0.55226 0.44774,0.99994 1,1h7.5c1.92119,0 3.5,-1.57881 3.5,-3.5v-23.38086c0.01129,-0.08622 0.01129,-0.17355 0,-0.25977v-3.44922c0,-1.75846 -0.70954,-3.37437 -1.87109,-4.53711c-0.03357,-0.03357 -0.04482,-0.04287 -0.03125,-0.0293c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.92656,-0.91221 -2.12019,-1.3822 -3.33789,-1.43555zM43.64453,8.40039c0.7563,0.02965 1.48952,0.3165 2.04492,0.86328c0.01891,0.01867 0.03272,0.03277 0.02344,0.02344c0.79645,0.79726 1.28711,1.9015 1.28711,3.12305v3.08594l-8,5.91211v-10.4082c0.00042,-0.0339 -0.00088,-0.0678 -0.00391,-0.10156l2.46289,-1.82031c0.00065,0 0.0013,0 0.00195,0c0.64864,-0.47915 1.42729,-0.70739 2.18359,-0.67773zM6.35742,8.40625c0.75715,-0.02964 1.53847,0.19746 2.1875,0.67773l2.45898,1.81836c-0.00289,0.03247 -0.0042,0.06506 -0.00391,0.09766v10.4082l-8,-5.91211v-3.08594c0,-1.23567 0.50176,-2.3413 1.3125,-3.14062c0.55526,-0.54776 1.28777,-0.83364 2.04492,-0.86328zM37,12.37109v10.51563l-12,8.86914l-12,-8.86914v-10.51367l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0zM3,17.98242l8,5.91406v17.10352h-6.5c-0.84081,0 -1.5,-0.65919 -1.5,-1.5zM47,17.98242v21.51758c0,0.84081 -0.65919,1.5 -1.5,1.5h-6.5v-17.10352z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-      <button class="hamburger" type="button" name="menu button">
-        <div class="menu-bar"></div>
-      </button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Lokmane Akkouh, home"><span class="brand-symbol"><img src="img/brand/v2/lokmane-akkouh-symbol.svg" width="256" height="256" alt=""></span><span>Lokmane Akkouh</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" hidden><span class="menu-label">Menu</span><span class="menu-symbol" aria-hidden="true"><span></span><span></span></span></button>
+      <div class="nav-menu" id="nav-menu">
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="button button-small button-outline" href="CV/Lokmane_akkouh_cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="Read my resume in French (PDF, opens in a new tab)">Resume <span class="file-label">PDF / FR</span></a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <span class="salutation">Hi there!</span>
-      <h1>I am <span class="name-highlight">AKKOUH LOKMANE</span>.</h1>
-
-      <p class="declaration">
-        Data Engineer | Master's in Data Science
-      </p>
-
-      <p style="text-align: justify">
-        Data Engineer currently completing a Master's in Data Science with a solid background in data engineering,
-        machine learning, and analytics. I specialize in building efficient and scalable data pipelines that empower
-        organizations to harness the full potential of their data. My focus is on creating seamless workflows and
-        integrating advanced technologies, ensuring clients benefit from reliable and impactful solutions.
-      </p>
-
-      <div class="cta-box">
-        <a href="#contact" class="cta cta1">Reach out</a>
-        <div class="cv-button-wrapper">
-          <button class="cta cta2 cv-trigger-main">Resume ▼</button>
-          <div class="cv-dropdown-menu-main">
-            <a href="CV/CV_eng.pdf" target="_blank" class="cv-option-main">
-              <span class="flag">🇬🇧</span> English
-            </a>
-            <a href="CV/CV_fr.pdf" target="_blank" class="cv-option-main">
-              <span class="flag">🇫🇷</span> Français
-            </a>
-          </div>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-title">
+        <h1 id="hero-title"><span>Lokmane</span> <span>Akkouh.</span></h1>
+        <p class="hero-role">Data &amp; AI Engineer</p>
+      </div>
+      <div class="hero-copy">
+        <a class="button button-primary" href="#experience">Explore my experience <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-panel">
+          <img class="portrait" src="img/PROFIL_new.png" width="1157" height="1360" alt="Portrait of Lokmane Akkouh" fetchpriority="high">
+          <nav class="portrait-socials" aria-label="Connect with Lokmane">
+            <a href="https://x.com/AkkouhLokmane1" target="_blank" rel="noopener noreferrer" aria-label="Lokmane on X (opens in a new tab)"><img src="img/x.svg" width="24" height="24" alt=""></a>
+            <a href="https://github.com/lokmane101" target="_blank" rel="noopener noreferrer" aria-label="Lokmane on GitHub (opens in a new tab)"><img src="img/github.svg" width="24" height="24" alt=""></a>
+            <a href="https://www.linkedin.com/in/lokmane-akkouh/" target="_blank" rel="noopener noreferrer" aria-label="Lokmane on LinkedIn (opens in a new tab)"><img src="img/linkedin.svg" width="24" height="24" alt=""></a>
+            <a href="mailto:lokmaneakkouh10@gmail.com" aria-label="Email Lokmane"><img src="img/gmail.svg" width="24" height="24" alt=""></a>
+          </nav>
         </div>
+      </div>
+      <div class="hero-note">
+        <p>Based in France.</p>
+        <a class="hero-credential" href="CV/certif_databricks.pdf" target="_blank" rel="noopener noreferrer" aria-label="View my Databricks Data Engineer Associate certificate (PDF, opens in a new tab)">Databricks Certified<br>Data Engineer Associate</a>
       </div>
     </section>
 
-    <aside class="main-social-links social-links">
-      <a href="https://github.com/lokmane101" target="_blank" class="social github">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(4,4)">
-              <path
-                d="M32,6c-14.359,0 -26,11.641 -26,26c0,12.277 8.512,22.56 19.955,25.286c-0.592,-0.141 -1.179,-0.299 -1.755,-0.479v-5.957c0,0 -0.975,0.325 -2.275,0.325c-3.637,0 -5.148,-3.245 -5.525,-4.875c-0.229,-0.993 -0.827,-1.934 -1.469,-2.509c-0.767,-0.684 -1.126,-0.686 -1.131,-0.92c-0.01,-0.491 0.658,-0.471 0.975,-0.471c1.625,0 2.857,1.729 3.429,2.623c1.417,2.207 2.938,2.577 3.721,2.577c0.975,0 1.817,-0.146 2.397,-0.426c0.268,-1.888 1.108,-3.57 2.478,-4.774c-6.097,-1.219 -10.4,-4.716 -10.4,-10.4c0,-2.928 1.175,-5.619 3.133,-7.792c-0.2,-0.567 -0.533,-1.714 -0.533,-3.583c0,-1.235 0.086,-2.751 0.65,-4.225c0,0 3.708,0.026 7.205,3.338c1.614,-0.47 3.341,-0.738 5.145,-0.738c1.804,0 3.531,0.268 5.145,0.738c3.497,-3.312 7.205,-3.338 7.205,-3.338c0.567,1.474 0.65,2.99 0.65,4.225c0,2.015 -0.268,3.19 -0.432,3.697c1.898,2.153 3.032,4.802 3.032,7.678c0,5.684 -4.303,9.181 -10.4,10.4c1.628,1.43 2.6,3.513 2.6,5.85v8.557c-0.576,0.181 -1.162,0.338 -1.755,0.479c11.443,-2.726 19.955,-13.009 19.955,-25.286c0,-14.359 -11.641,-26 -26,-26zM33.813,57.93c-0.599,0.042 -1.203,0.07 -1.813,0.07c0.61,0 1.213,-0.029 1.813,-0.07zM37.786,57.346c-1.164,0.265 -2.357,0.451 -3.575,0.554c1.218,-0.103 2.411,-0.29 3.575,-0.554zM32,58c-0.61,0 -1.214,-0.028 -1.813,-0.07c0.6,0.041 1.203,0.07 1.813,0.07zM29.788,57.9c-1.217,-0.103 -2.411,-0.289 -3.574,-0.554c1.164,0.264 2.357,0.451 3.574,0.554z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title">Professional experience.</h2></div>
+      <article class="experience-feature">
+        <div class="experience-context">
+          <div class="company-logo"><img src="img/socotec%20logo.png" width="320" height="320" alt="SOCOTEC" loading="lazy"></div>
+          <p class="experience-date">March — September 2026</p>
+          <h3>SOCOTEC Monitoring</h3>
+          <p class="company-name">Data Engineer</p>
+          <p class="experience-place">Palaiseau, France</p>
+          <p class="context-description">Inside the Data &amp; AI Hub, working on an AWS-backed Databricks lakehouse spanning around 30 business domains.</p>
+          <ul class="tags" aria-label="SOCOTEC technologies"><li>Databricks</li><li>PySpark</li><li>SQL</li><li>AWS</li><li>GitLab CI/CD</li></ul>
+        </div>
+        <div class="experience-contributions">
+          <h4>Databricks lakehouse</h4>
+          <p>Developed production ETL/ELT pipelines, strengthened data quality, and brought source data into reporting-ready Silver and Gold layers.</p>
+          <details class="experience-details"><summary>Engineering contributions <span class="disclosure-symbol" aria-hidden="true"></span></summary><ul class="contribution-list">
+            <li><strong>Reporting migration.</strong> Built quote and quote-line datasets from PostgreSQL CDC via Airbyte, reconciling more than 540,000 rows for the Power BI migration.</li>
+            <li><strong>API ingestion.</strong> Implemented incremental ingestion for 10 SAP Field Service Management objects, including OAuth2, pagination and error recovery.</li>
+            <li><strong>Data quality.</strong> Designed a DQX-based framework with 34 check types, severity-based alerts and blocking controls. Configured 101 checks across four domains.</li>
+            <li><strong>Delivery.</strong> Deployed jobs with Databricks Asset Bundles and the team’s GitLab CI/CD pipeline across three environments.</li>
+          </ul></details>
+        </div>
+      </article>
+      <div class="previous-experiences">
+        <article class="experience-feature">
+          <div class="experience-context">
+            <div class="company-logo"><img src="img/logostm.png" width="300" height="256" alt="STM Group" loading="lazy"></div>
+            <p class="experience-date">February — June 2025</p>
+            <h3>STM Group</h3>
+            <p class="company-name">Data Engineer</p>
+            <p class="experience-place">Engineering internship, R&amp;D<br>Tanger, Morocco</p>
+            <p class="context-description">Connecting previously isolated parking sites to a central data platform, with real-time operations and reporting.</p>
+            <ul class="tags" aria-label="STM Group technologies"><li>Kafka</li><li>Debezium</li><li>PostgreSQL</li><li>FastAPI</li><li>Kubernetes</li><li>DigitalOcean</li></ul>
+          </div>
+          <div class="experience-contributions">
+            <h4>Parking data platform</h4>
+            <p>Built the data flow and backend services that connect local parking operations to a shared system.</p>
+            <details class="experience-details"><summary>Engineering contributions <span class="disclosure-symbol" aria-hidden="true"></span></summary><ul class="contribution-list">
+              <li><strong>Real-time ingestion.</strong> Synchronized site PostgreSQL databases to a central database with Kafka and Debezium change data capture.</li>
+              <li><strong>Operational data models.</strong> Designed shared tables and PostgreSQL triggers to detect fraud and update subscription balances.</li>
+              <li><strong>Business-facing APIs.</strong> Built FastAPI services for subscriptions, vehicle entries and exits, occupancy rates and revenue reporting.</li>
+              <li><strong>Cloud deployment.</strong> Deployed Kubernetes and Strimzi on DigitalOcean, with Tailscale connecting securely to on-premise databases.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="experience-feature">
+          <div class="experience-context">
+            <div class="company-logo company-logo-wide"><img src="img/shiftbricks-logo.svg" width="767" height="141" alt="Shiftbricks" loading="lazy"></div>
+            <p class="experience-date">June — September 2024</p>
+            <h3>Shiftbricks</h3>
+            <p class="company-name">Data &amp; AI Engineer</p>
+            <p class="experience-place">LegalTech<br>Al Hoceima, Morocco</p>
+            <p class="context-description">Making Arabic legal documents usable by AI applications, with structured extraction and expert validation.</p>
+            <ul class="tags" aria-label="Shiftbricks technologies"><li>Python</li><li>Airflow</li><li>MongoDB</li><li>Cohere</li><li>FastAPI</li><li>React</li><li>Docker</li></ul>
+          </div>
+          <div class="experience-contributions">
+            <h4>Legal document pipeline</h4>
+            <p>Built a pipeline from raw legal documents to structured information, keeping domain experts in the validation loop.</p>
+            <details class="experience-details"><summary>Engineering contributions <span class="disclosure-symbol" aria-hidden="true"></span></summary><ul class="contribution-list">
+              <li><strong>Document extraction.</strong> Combined OCR and Cohere language models to extract more than 15 fields per document from a corpus of over 80 legal documents.</li>
+              <li><strong>Orchestration.</strong> Used Airflow and a Medallion architecture to manage extraction and transformation, with MongoDB for data storage.</li>
+              <li><strong>Human validation.</strong> Built a FastAPI and React interface so business experts could review and validate extracted information.</li>
+              <li><strong>Delivery.</strong> Containerized the application with Docker and delivered it with GitLab CI/CD.</li>
+            </ul></details>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <a href="https://linkedin.com/in/lokmane-akkouh" target="_blank" class="social linkedin">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(5.12,5.12)">
-              <path
-                d="M9,4c-2.74952,0 -5,2.25048 -5,5v32c0,2.74952 2.25048,5 5,5h32c2.74952,0 5,-2.25048 5,-5v-32c0,-2.74952 -2.25048,-5 -5,-5zM9,6h32c1.66848,0 3,1.33152 3,3v32c0,1.66848 -1.33152,3 -3,3h-32c-1.66848,0 -3,-1.33152 -3,-3v-32c0,-1.66848 1.33152,-3 3,-3zM14,11.01172c-1.09522,0 -2.08078,0.32736 -2.81055,0.94141c-0.72977,0.61405 -1.17773,1.53139 -1.17773,2.51367c0,1.86718 1.61957,3.32281 3.67969,3.4668c0.0013,0.00065 0.0026,0.0013 0.00391,0.00195c0.09817,0.03346 0.20099,0.05126 0.30469,0.05273c2.27301,0 3.98828,-1.5922 3.98828,-3.52148c-0.00018,-0.01759 -0.00083,-0.03518 -0.00195,-0.05274c-0.10175,-1.90023 -1.79589,-3.40234 -3.98633,-3.40234zM14,12.98828c1.39223,0 1.94197,0.62176 2.00195,1.50391c-0.01215,0.85625 -0.54186,1.51953 -2.00195,1.51953c-1.38541,0 -2.01172,-0.70949 -2.01172,-1.54492c0,-0.41771 0.15242,-0.7325 0.47266,-1.00195c0.32023,-0.26945 0.83428,-0.47656 1.53906,-0.47656zM11,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-5.86523v-13.13477c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM20,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10c0,-0.82967 0.22639,-1.65497 0.625,-2.19531c0.39861,-0.54035 0.90147,-0.86463 1.85742,-0.84766c0.98574,0.01695 1.50758,0.35464 1.90234,0.88477c0.39477,0.53013 0.61523,1.32487 0.61523,2.1582v10c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10.73828c0,-2.96154 -0.87721,-5.30739 -2.38086,-6.89453c-1.50365,-1.58714 -3.59497,-2.36719 -5.80664,-2.36719c-2.10202,0 -3.70165,0.70489 -4.8125,1.42383v-0.42383c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM12,21h4v12.13477v4.86523h-4zM21,21h4v1.56055c0.00013,0.43 0.27511,0.81179 0.68291,0.94817c0.40781,0.13638 0.85714,-0.00319 1.11591,-0.34661c0,0 1.57037,-2.16211 5.01367,-2.16211c1.75333,0 3.25687,0.58258 4.35547,1.74219c1.0986,1.15961 1.83203,2.94607 1.83203,5.51953v9.73828h-4v-9c0,-1.16667 -0.27953,-2.37289 -1.00977,-3.35352c-0.73023,-0.98062 -1.9584,-1.66341 -3.47266,-1.68945c-1.52204,-0.02703 -2.77006,0.66996 -3.50195,1.66211c-0.73189,0.99215 -1.01562,2.21053 -1.01562,3.38086v9h-4z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
 
-      <a href="https://x.com/AkkouhLokmane1" target="_blank" class="social twitter">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(5.12,5.12)">
-              <path
-                d="M11,4c-3.85433,0 -7,3.14567 -7,7v28c0,3.85433 3.14567,7 7,7h28c3.85433,0 7,-3.14567 7,-7v-28c0,-3.85433 -3.14567,-7 -7,-7zM11,6h28c2.77367,0 5,2.22633 5,5v28c0,2.77367 -2.22633,5 -5,5h-28c-2.77367,0 -5,-2.22633 -5,-5v-28c0,-2.77367 2.22633,-5 5,-5zM13.08594,13l9.22266,13.10352l-9.30859,10.89648h2.5l7.9375,-9.29297l6.53906,9.29297h7.9375l-10.125,-14.38672l8.21094,-9.61328h-2.5l-6.83984,8.00977l-5.63672,-8.00977zM16.91406,15h3.06445l14.10742,20h-3.06445z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="projects-title">Selected work.</h2></div>
+        <div class="project-grid">
+          <article class="project project-featured" id="patent-analysis">
+            <header class="project-intro"><h3>Agricultural<br>patent analytics</h3><span class="project-tools">Python / Spark / MongoDB / PostgreSQL / Power BI</span><a class="project-link" href="https://github.com/lokmane101/PatentAnalysis" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a></header>
+            <figure class="project-image">
+              <a class="diagram-link" href="img/projects/patent-architecture-adapted.png" target="_blank" rel="noopener noreferrer" aria-label="Explore patent analysis architecture in detail"><img src="img/projects/patent-architecture-adapted.png" width="1536" height="1024" alt="Agricultural patent analysis architecture: patent sources feed Python collection, MongoDB Atlas, Apache Spark, PostgreSQL and Power BI in a Flask application." loading="lazy" decoding="async"></a>
+              <figcaption><a href="img/projects/patent-architecture-adapted.png" target="_blank" rel="noopener noreferrer">View full-size diagram</a></figcaption>
+            </figure>
+            <div class="project-story"><div><h4>The challenge</h4><p>Patent information is spread across multiple sources. It needs to be collected, processed and made available for analysis.</p></div><div><h4>How I built it</h4><p>Python collectors feed MongoDB Atlas. Spark prepares the data for PostgreSQL, while Power BI and Flask make it explorable.</p></div></div>
+          </article>
+          <article class="project project-chat" id="xtelecom">
+            <header class="project-intro"><h3>XTelecom<br>support assistant</h3><span class="project-tools">Vertex AI / RAG / FastAPI / React / Langfuse</span><a class="project-link" href="https://github.com/lokmane101" target="_blank" rel="noopener noreferrer">More work on GitHub <span aria-hidden="true">↗</span></a></header>
+            <figure class="project-image">
+              <a class="diagram-link" href="img/projects/xtelecom-architecture-technical.png" target="_blank" rel="noopener noreferrer" aria-label="Explore XTelecom architecture in detail"><img src="img/projects/xtelecom-architecture-technical.png" width="1536" height="1024" alt="XTelecom architecture: React connects to a Python FastAPI assistant API, which exchanges data with PostgreSQL, document retrieval and Google Vertex AI Gemini. Langfuse traces requests; the infrastructure tools are Docker, Google Cloud and AWS." loading="lazy" decoding="async"></a>
+              <figcaption><a href="img/projects/xtelecom-architecture-technical.png" target="_blank" rel="noopener noreferrer">View full-size diagram</a></figcaption>
+            </figure>
+            <div class="project-story"><div><h4>The challenge</h4><p>Support questions can depend on structured customer data or knowledge held in documents. The assistant needs access to both.</p></div><div><h4>How I built it</h4><p>SQL and document retrieval provide the two information paths. Vertex AI and Gemini support the assistant, FastAPI serves it, and Langfuse traces requests.</p></div></div>
+          </article>
+          <article class="project project-legal" id="legal-documents">
+            <header class="project-intro"><h3>Legal document<br>ingestion</h3><span class="project-tools">Airflow / MongoDB / FastAPI / React / Docker</span></header>
+            <figure class="project-image">
+              <a class="diagram-link" href="img/projects/legal-architecture-adapted.png" target="_blank" rel="noopener noreferrer" aria-label="Explore legal ingestion architecture in detail"><img src="img/projects/legal-architecture-adapted.png" width="1536" height="1024" alt="Shiftbricks architecture: image, HTML, PDF and Word sources flow through Airflow Bronze and Silver layers, MongoDB and a FastAPI React validation app, then into the Gold layer for AI applications." loading="lazy" decoding="async"></a>
+              <figcaption><a href="img/projects/legal-architecture-adapted.png" target="_blank" rel="noopener noreferrer">View full-size diagram</a></figcaption>
+            </figure>
+            <div class="project-story"><div><h4>The challenge</h4><p>Arabic legal documents need structured extraction, with domain experts able to check the information before it is used.</p></div><div><h4>How I built it</h4><p>Airflow orchestrates Bronze, Silver and Gold layers. MongoDB stores extracted information, and a FastAPI and React application closes the human-validation loop.</p></div></div>
+          </article>
+        </div>
+        <details class="more-projects"><summary>More projects <span class="disclosure-symbol" aria-hidden="true"></span></summary><div class="project-archive">
+          <article><p class="project-category">Machine learning</p><h3>Laptop price prediction</h3><p>A specification-based price prediction model, with a Streamlit interface.</p><a href="https://github.com/lokmane101/laptop-price-prediction" target="_blank" rel="noopener noreferrer">View laptop prediction code</a></article>
+          <article><p class="project-category">Software engineering</p><h3>Exam management</h3><p>An application for managing exams, teachers and subjects with Spring Boot, Spring Security and MySQL.</p><a href="https://github.com/lokmane101/SpringBootExamManagamentApp" target="_blank" rel="noopener noreferrer">View exam management code</a></article>
+          <article><p class="project-category">Deep learning</p><h3>Image super-resolution</h3><p>A convolutional neural network that reconstructs higher-resolution images from low-resolution inputs.</p><a href="https://github.com/lokmane101/SRCNN" target="_blank" rel="noopener noreferrer">View SRCNN code</a></article>
+          <article><p class="project-category">Software engineering</p><h3>Student data management</h3><p>A Python desktop application with a Tkinter interface and MySQL storage.</p><a href="https://github.com/lokmane101/SchoolStudentManagementApp" target="_blank" rel="noopener noreferrer">View student management code</a></article>
+        </div></details>
+      </div>
+    </section>
 
-      <a href="mailto:lokmaneakkouh10@gmail.com" target="_blank" class="social behance">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(5.12,5.12)">
-              <path
-                d="M43.75391,6.40234c-1.2177,-0.05335 -2.45911,0.31055 -3.48242,1.06641l-2.74609,2.02734l-12.52539,9.25977l-12.4082,-9.17187c-0.17292,-0.16897 -0.4012,-0.26957 -0.64258,-0.2832h0.25l-2.46484,-1.82422c-1.02397,-0.75773 -2.26723,-1.12367 -3.48633,-1.07031c-1.2191,0.05336 -2.4131,0.52522 -3.33984,1.43945c-1.17726,1.16068 -1.9082,2.78413 -1.9082,4.56445v3.43359c-0.01457,0.09777 -0.01457,0.19715 0,0.29492v23.36133c0,1.92119 1.57881,3.5 3.5,3.5h7.5c0.55226,-0.00006 0.99994,-0.44774 1,-1v-16.62695l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0l11.40625,-8.43164v16.62695c0.00006,0.55226 0.44774,0.99994 1,1h7.5c1.92119,0 3.5,-1.57881 3.5,-3.5v-23.38086c0.01129,-0.08622 0.01129,-0.17355 0,-0.25977v-3.44922c0,-1.75846 -0.70954,-3.37437 -1.87109,-4.53711c-0.03357,-0.03357 -0.04482,-0.04287 -0.03125,-0.0293c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.92656,-0.91221 -2.12019,-1.3822 -3.33789,-1.43555zM43.64453,8.40039c0.7563,0.02965 1.48952,0.3165 2.04492,0.86328c0.01891,0.01867 0.03272,0.03277 0.02344,0.02344c0.79645,0.79726 1.28711,1.9015 1.28711,3.12305v3.08594l-8,5.91211v-10.4082c0.00042,-0.0339 -0.00088,-0.0678 -0.00391,-0.10156l2.46289,-1.82031c0.00065,0 0.0013,0 0.00195,0c0.64864,-0.47915 1.42729,-0.70739 2.18359,-0.67773zM6.35742,8.40625c0.75715,-0.02964 1.53847,0.19746 2.1875,0.67773l2.45898,1.81836c-0.00289,0.03247 -0.0042,0.06506 -0.00391,0.09766v10.4082l-8,-5.91211v-3.08594c0,-1.23567 0.50176,-2.3413 1.3125,-3.14062c0.55526,-0.54776 1.28777,-0.83364 2.04492,-0.86328zM37,12.37109v10.51563l-12,8.86914l-12,-8.86914v-10.51367l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0zM3,17.98242l8,5.91406v17.10352h-6.5c-0.84081,0 -1.5,-0.65919 -1.5,-1.5zM47,17.98242v21.51758c0,0.84081 -0.65919,1.5 -1.5,1.5h-6.5v-17.10352z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
-      <!-- #D0D4D4 -->
-    </aside>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title"><div class="container">
+      <div class="section-heading"><h2 id="skills-title">Technical expertise.</h2></div>
+      <div class="skills-layout">
+        <div class="skills-groups">
+          <div class="skill-group"><h3>Ingest &amp; transform</h3><ul class="skill-list">
+            <li><span class="skill-icon skill-icon-png"><img class="skill-databricks" src="img/Databricks_Logo.png" width="1200" height="630" alt="" loading="lazy"></span><span>Databricks</span></li>
+            <li><span class="skill-icon skill-icon-png"><img class="skill-spark" src="img/Spark-logo-192x100px.png" width="192" height="100" alt="" loading="lazy"></span><span>Apache Spark</span></li>
+            <li><span class="skill-icon skill-icon-png"><img class="skill-pyspark" src="img/pyspark-lang.png" width="269" height="202" alt="" loading="lazy"></span><span>PySpark</span></li>
+            <li><span class="skill-icon"><img src="img/Airflow.svg" width="56" height="28" alt="" loading="lazy"></span>Airflow</li>
+            <li><span class="skill-icon"><img src="img/hadoop.svg" width="40" height="40" alt="" loading="lazy"></span>Hadoop</li>
+            <li><span class="skill-icon"><img src="img/talend.svg" width="56" height="28" alt="" loading="lazy"></span>Talend</li>
+          </ul><p class="skill-context">Delta Lake, Unity Catalog, DQX, Asset Bundles, Kafka, Debezium, Airbyte</p></div>
+          <div class="skill-group"><h3>Build &amp; connect</h3><ul class="skill-list">
+            <li><span class="skill-icon"><img src="img/python.svg" width="40" height="40" alt="" loading="lazy"></span>Python</li>
+            <li><span class="skill-icon"><img src="img/java.svg" width="40" height="40" alt="" loading="lazy"></span>Java</li>
+            <li><span class="skill-icon"><img src="img/javascript.svg" width="40" height="40" alt="" loading="lazy"></span>JavaScript</li>
+            <li><span class="skill-icon"><img src="img/react.svg" width="40" height="40" alt="" loading="lazy"></span>React</li>
+            <li><span class="skill-icon"><img src="img/spring.svg" width="40" height="40" alt="" loading="lazy"></span>Spring Boot</li>
+            <li><span class="skill-icon"><img src="img/flask.svg" width="40" height="40" alt="" loading="lazy"></span>Flask</li>
+          </ul><p class="skill-context">SQL, PL/SQL, FastAPI, HTML, CSS, Scikit-learn, RAG, Vertex AI</p></div>
+          <div class="skill-group"><h3>Store &amp; deliver</h3><ul class="skill-list">
+            <li><span class="skill-icon"><img src="img/Postgres.svg" width="40" height="40" alt="" loading="lazy"></span>PostgreSQL</li>
+            <li><span class="skill-icon"><img src="img/mongodb.svg" width="40" height="40" alt="" loading="lazy"></span>MongoDB</li>
+            <li><span class="skill-icon"><img src="img/mysql.svg" width="40" height="40" alt="" loading="lazy"></span>MySQL</li>
+            <li><span class="skill-icon"><img src="img/docker.svg" width="48" height="40" alt="" loading="lazy"></span>Docker</li>
+            <li><span class="skill-icon"><img src="img/git.svg" width="40" height="40" alt="" loading="lazy"></span>Git</li>
+            <li><span class="skill-icon"><img src="img/powerBI.svg" width="40" height="40" alt="" loading="lazy"></span>Power BI</li>
+          </ul><p class="skill-context">AWS, Azure, Kubernetes, GitLab CI/CD, Oracle, Cassandra</p></div>
+        </div>
+        <aside class="certifications" id="certifications" aria-labelledby="certifications-title">
+          <div class="certification-logo"><img src="img/Databricks_Logo.png" width="1200" height="630" alt="Databricks" loading="lazy"></div>
+          <h3 id="certifications-title">Certifications</h3>
+          <div class="credential"><span class="credential-status">Certified</span><h4>Data Engineer Associate</h4><p>Databricks</p><p class="credential-validity">Valid until <time datetime="2028-08-16">16 August 2028</time></p><div class="credential-links"><a href="CV/certif_databricks.pdf" target="_blank" rel="noopener noreferrer" aria-label="View my Databricks Data Engineer Associate certificate (PDF, opens in a new tab)">View certificate <span class="file-label">PDF</span></a><a href="https://credentials.databricks.com/4ef911d6-f5a3-43ed-bfc5-15ab97abac23#acc.t9CYaR36" target="_blank" rel="noopener noreferrer" aria-label="Verify my Databricks badge (opens the Databricks credentials website in a new tab)">Verify badge <span aria-hidden="true">↗</span></a></div></div>
+          <div class="credential"><span class="credential-status credential-preparing">In preparation</span><h4>Data Engineer Professional</h4><p>Databricks</p></div>
+          <div class="credential credential-last"><h4>Big Data with Spark and Hadoop Essentials</h4><p>IBM</p></div>
+        </aside>
+      </div></div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title"><div class="container about-layout">
+      <div class="about-copy"><h2 id="about-title">About me.</h2><p>I’m a Data &amp; AI Engineer. I’ve worked on enterprise reporting at SOCOTEC, real-time parking data at STM Group and legal document extraction at Shiftbricks.</p><p>My background combines data engineering at ENSA Al Hoceima with a Master’s in Data Science at Université Claude Bernard Lyon 1.</p><a class="text-link" href="CV/Lokmane_akkouh_cv.pdf" target="_blank" rel="noopener noreferrer">Read my resume <span class="file-label">PDF in French</span></a></div>
+      <div class="education" id="education"><h3>Education</h3>
+        <article class="education-entry"><div class="education-logo"><img src="img/ucbl.png" width="400" height="289" alt="" loading="lazy"></div><div><p class="education-date">2025 — 2026</p><h4>Master’s in Data Science</h4><p>Université Claude Bernard Lyon 1</p><span>Lyon, France</span></div></article>
+        <article class="education-entry"><div class="education-logo"><img src="img/ensah.png" width="995" height="795" alt="" loading="lazy"></div><div><p class="education-date">2020 — 2025</p><h4>Engineering degree</h4><p>Data Engineering<br>ENSA Al Hoceima<br>Université Abdelmalek Essaâdi</p><span>Al Hoceima, Morocco</span></div></article>
+      </div>
+    </div></section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-layout">
+      <div><h2 id="contact-title">Get in touch.</h2></div>
+      <div class="contact-links"><a class="contact-email" href="mailto:lokmaneakkouh10@gmail.com">lokmaneakkouh10@gmail.com</a><a class="button button-primary" href="mailto:lokmaneakkouh10@gmail.com">Write me an email</a><div class="contact-socials"><a href="https://www.linkedin.com/in/lokmane-akkouh/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.svg" width="24" height="24" alt="">LinkedIn</a><a href="https://github.com/lokmane101" target="_blank" rel="noopener noreferrer"><img src="img/github.svg" width="24" height="24" alt="">GitHub</a><a href="https://x.com/AkkouhLokmane1" target="_blank" rel="noopener noreferrer"><img src="img/x.svg" width="24" height="24" alt="">X</a></div></div>
+    </div></section>
   </main>
-
-  <section id="about">
-    <div class="separator">
-      <h2>About</h2>
-    </div>
-
-    <div>
-      <p class="about-text">
-        Hello, I'm Lokmane Akkouh, currently based in Lyon, France.
-        I have a strong passion for data engineering and software development,
-        focused on creating impactful solutions in the fields of AI and automation.
-        As a Data Engineer completing my Master's in Data Science, I bring not just technical expertise
-        but also a dedication to collaboration and continuous learning.
-        <br />
-        <br />
-        I'm eager to leverage my skills in real-world projects,
-        contributing to the advancement of innovative technologies and making a meaningful impact.
-        Let's collaborate and create extraordinary solutions together!
-        <br />
-
-      </p>
-
-    </div>
-
-    <div class="profile">
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/PROFIL_new.png" class="profile-img" alt="Profile Image" />
-          </div>
-          <ul class="social-icons">
-            <li><a href="https://www.facebook.com/lokmane.akkouh.1" target="_blank"><i
-                  class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://linkedin.com/in/lokmane-akkouh/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li><a href="https://github.com/lokmane101" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="mailto:lokmaneakkouh10@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-          </ul>
-          <div class="details">
-            <h2 class="job-title">Data & Software Engineer</h2>
-          </div>
-        </div>
-      </div>
-      <p><strong style="font-size: 2em; color: white;font-family: 'Roboto', sans-serif;">AKKOUH LOKMANE</strong></p>
-    </div>
-
-
-  </section>
-
-  <section id="education">
-    <div class="separator">
-      <h2>Education</h2>
-    </div>
-
-    <div class="education-timeline">
-      <div class="education-item">
-        <div class="education-header">
-          <div class="education-header-logo">
-            <img src="img/ucbl.png" alt="Claude Bernard Lyon 1 University Logo" />
-          </div>
-          <div class="education-header-info">
-            <div class="education-header-top">
-              <h3>Master 2 in Data Science</h3>
-              <span class="year-badge">2025 - 2026</span>
-            </div>
-            <h4 class="institution">Faculty of Science and Technology, Claude Bernard Lyon 1 University</h4>
-          </div>
-        </div>
-        <div class="education-body">
-          <p class="location"><i class="fas fa-map-marker-alt"></i> Lyon, France</p>
-          <p class="education-description">
-            Advanced training in modern data science methodologies and technologies.
-          </p>
-          <div class="coursework">
-            <span class="coursework-label">Relevant Coursework:</span>
-            <ul class="coursework-list">
-              <li>Data Integration and Quality</li>
-              <li>Big Data Analytics</li>
-              <li>Data Mining</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="education-item">
-        <div class="education-header">
-          <div class="education-header-logo">
-            <img src="img/ensah.png" alt="ENSAH University Logo" />
-          </div>
-          <div class="education-header-info">
-            <div class="education-header-top">
-              <h3>Diploma in Data Engineering</h3>
-              <span class="year-badge">2020 - 2025</span>
-            </div>
-            <h4 class="institution">National School of Applied Sciences of Al Hoceima, Abdelmalek Essaâdi University
-            </h4>
-          </div>
-        </div>
-        <div class="education-body">
-          <p class="location"><i class="fas fa-map-marker-alt"></i> Al Hoceima, Morocco</p>
-          <p class="education-description">
-            Comprehensive engineering program focused on data technologies and software development.
-          </p>
-          <div class="coursework">
-            <span class="coursework-label">Relevant Coursework:</span>
-            <ul class="coursework-list">
-              <li>Databases</li>
-              <li>Big Data</li>
-              <li>Machine Learning</li>
-              <li>Cloud Computing</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="separator">
-      <h2>Professional Experience</h2>
-    </div>
-
-    <div class="experience-timeline">
-      <div class="experience-item">
-        <div class="experience-image">
-          <img src="img/ParkingManagementSystemOverview.png" alt="Smart Parking Management System" />
-        </div>
-        <div class="experience-main">
-          <div class="experience-header">
-            <div class="experience-title-box">
-              <h3>Data Engineering Intern</h3>
-              <h4 class="company">STM GROUP</h4>
-              <p class="experience-location"><i class="fas fa-map-marker-alt"></i> Tanger, Morocco</p>
-            </div>
-            <div class="experience-date">
-              <span class="date-badge">Feb 2025 – Jun 2025</span>
-            </div>
-          </div>
-          <div class="experience-content">
-            <div class="experience-description">
-              <p>I developed a smart parking management system by building a real-time data pipeline using Kafka, with
-                PostgreSQL for storage and Tailscale VPN to secure the parking network. The entire solution was deployed
-                on DigitalOcean, enabling efficient, cloud-based management and monitoring of parking data.</p>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">Debezium</span>
-              <span class="tech-tag">Kafka</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">DigitalOcean</span>
-              <span class="tech-tag">Tailscale VPN</span>
-              <span class="tech-tag">Docker</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="experience-item">
-        <div class="experience-image">
-          <img src="img/Shiftbricks.png" alt="Shiftbricks Data Pipeline" />
-        </div>
-        <div class="experience-main">
-          <div class="experience-header">
-            <div class="experience-title-box">
-              <h3>Data Engineering Intern</h3>
-              <h4 class="company">SHIFTBRICKS</h4>
-              <p class="experience-location"><i class="fas fa-map-marker-alt"></i> Al Hoceima, Morocco</p>
-            </div>
-            <div class="experience-date">
-              <span class="date-badge">Jun 2024 – Sep 2024</span>
-            </div>
-          </div>
-          <div class="experience-content">
-            <div class="experience-description">
-              <p>I built a data pipeline to process Arabic legal documents using OCR and LLM models, storing results in
-                MongoDB. Workflows were automated with Airflow, complemented by a FARM-based validation interface, and
-                the app was containerized with Docker for scalable deployment.</p>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Git</span>
-              <span class="tech-tag">GitLab</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Airflow</span>
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">OCR</span>
-              <span class="tech-tag">LLM</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="featured-projects-box">
-      <div class="separator">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="project project1">
-        <div class="project-details-box">
-          <div class="project-main-info">
-            <span>Project #1</span>
-            <h3>Xtelecom Smart Customer Support Chatbot</h3>
-            <p style="text-align: justify">
-              A smart customer support chatbot designed for Xtelecom that intelligently routes user queries to the
-              appropriate data source. It combines SQL capabilities for structured data (plans, usage, billing) with a
-              RAG system using Google
-              Vertex AI for unstructured data (FAQs, troubleshooting guides, policies). Features include intelligent
-              routing with Gemini-2.5-Pro, hybrid
-              search, FastAPI backend, CI/CD with GitHub Actions, and observability with Langfuse for tracing and
-              monitoring.
-            </p>
-
-            <div class="project-links">
-              <a href="https://github.com/lokmane101/" target="_blank">
-                <img src="img/github.svg" alt="github repo link icon" />
-              </a>
-            </div>
-          </div>
-
-          <div class="project-tools">
-            <p>Python, FastAPI, Google Vertex AI, Gemini-2.5-Pro, PostgreSQL, Docker, LangChain, Langfuse, AWS, React,
-              GitHub Actions</p>
-          </div>
-        </div>
-
-        <div class="project-image-box">
-          <a href="https://github.com/lokmane101/" target="_blank" class="project-img-link">
-            <img src="img/Xtelecom.png" alt="Xtelecom Chatbot Project Preview" />
-          </a>
-        </div>
-      </div>
-
-      <div class="project project2">
-        <div class="project-details-box">
-          <div class="project-main-info">
-            <span>Project #2</span>
-            <h3>Big Data Patent Analysis for Agriculture</h3>
-            <p style="text-align: justify">
-              This project utilizes Apache Spark for processing, MongoDB for storage,
-              and PostgreSQL as a data warehouse to analyze patents in the agriculture sector. PySpark ensures data
-              consistency,
-              while Power BI provides dynamic visualizations integrated into a web interface built with Flask,
-              JavaScript, css and HTML.
-            </p>
-
-            <div class="project-links">
-              <a href="https://github.com/lokmane101/PatentAnalysis" target="_blank">
-                <img src="img/github.svg" alt="github repo link icon" />
-              </a>
-            </div>
-          </div>
-
-          <div class="project-tools">
-            <p>power BI, mongoAtlas, docker, python, flask , html, css, javascript, scrapy, postgres, beautiful soup</p>
-          </div>
-        </div>
-
-        <div class="project-image-box">
-          <a href="https://github.com/lokmane101/PatentAnalysis" target="_blank" class="project-img-link">
-            <img src="img/Patent-analysis.png" alt="Project Preview Image" />
-          </a>
-        </div>
-      </div>
-
-      <div class="project project3">
-        <div class="project-details-box">
-          <div class="project-main-info">
-            <span>Project #3</span>
-            <h3>AI Data Ingetion Pipeline for Legal Applications</h3>
-            <p style="text-align: justify">
-              Built an AI-driven pipeline using Apache Airflow and Medallion Architecture to process legal documents.
-              Integrated NLP and OCR,
-              including Arabic OCR, with MongoDB Atlas for storage. Used FastAPI and React for a validation interface.
-
-          </div>
-
-          <div class="project-tools">
-            <p>docker , mongoAtlas , react , fastAPI, AirFlow</p>
-          </div>
-        </div>
-
-        <div class="project-image-box">
-          <a href="https://github.com/lokmane101/" target="_blank" class="project-img-link">
-            <img src="img/data-pipeline-b-draw.drawio.png" alt="Project Preview Image" />
-          </a>
-        </div>
-      </div>
-
-      <div class="project project4">
-        <div class="project-details-box">
-          <div class="project-main-info">
-            <span>Project #4</span>
-            <h3>SpringBootExamManagamentApp</h3>
-            <p style="text-align: justify">
-              A spring boot application for exams, profs and subject management
-            </p>
-
-            <div class="project-links">
-              <a href="https://github.com/lokmane101/SpringBootExamManagamentApp" target="_blank">
-                <img src="img/github.svg" alt="github repo link icon" />
-              </a>
-
-            </div>
-          </div>
-
-          <div class="project-tools">
-            <p>Spring boot ,spring Security , mysql</p>
-          </div>
-        </div>
-
-        <div class="project-image-box">
-          <a href="https://github.com/lokmane101/SpringBootExamManagamentApp" target="_blank" class="project-img-link">
-            <img src="img/SpringBootExamManagamentApp.png" alt="Project Preview Image" />
-          </a>
-        </div>
-      </div>
-
-      <div class="project project5">
-        <div class="project-details-box">
-          <div class="project-main-info">
-            <span>Project #5</span>
-            <h3>Laptop Price Prediction </h3>
-            <p style="text-align: justify">
-              This project aims to predict laptop prices based on various specifications.
-              The model can be useful for both buyers,
-              to get an estimate of the price before purchasing, and sellers, to set a competitive price for their
-              products.
-            </p>
-
-            <div class="project-links">
-              <a href="https://github.com/lokmane101/laptop-price-prediction" target="_blank">
-                <img src="img/github.svg" alt="github repo link icon" />
-              </a>
-
-            </div>
-          </div>
-
-          <div class="project-tools">
-            <p>sklearn, xgboost, Streamlit,beautiful soup</p>
-          </div>
-        </div>
-
-        <div class="project-image-box">
-          <a href="https://github.com/lokmane101/laptop-price-prediction" target="_blank" class="project-img-link">
-            <img src="img/laptop-price-prediction.png" alt="Project Preview Image" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="other-projects-box">
-      <div class="separator">
-        <h2>Other Notable Projects</h2>
-      </div>
-
-      <div class="notable-projects-box">
-        <div class="side-project">
-          <div>
-            <a href="https://github.com/lokmane101/SRCNN" target="_blank">
-              <img src="img/github.svg" alt="github repo link icon" />
-            </a>
-          </div>
-
-          <h3>Super-Resolution Convolutional Neural Network (SRCNN)</h3>
-
-          <p style="text-align: justify">
-            The SRCNN is designed to improve the resolution of low-resolution images, producing high-resolution
-            versions.
-            By leveraging deep learning techniques, SRCNN effectively enhances image quality,
-            making it a valuable tool in various applications such as medical imaging, satellite imaging, and more.
-          </p>
-
-          <span> numpy, matplotlib, skimage , kiras</span>
-        </div>
-
-        <div class="side-project">
-          <div>
-            <a href="https://github.com/lokmane101/SchoolStudentManagementApp" target="_blank">
-              <img src="img/github.svg" alt="github repo link icon" />
-            </a>
-          </div>
-
-          <h3> Student Data Management Application</h3>
-
-          <p style="text-align: justify">
-            The "Student Data Management Application" is a comprehensive and user-friendly desktop application
-            designed to simulate a complete school student data management system. Created using the power of Python,
-            this application serves as an indispensable tool for both students and educators by providing an organized
-            platform to access,
-            manage, and interact with various aspects of their academic journey.
-          </p>
-
-          <span>python , MySQL , tkinter </span>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="separator">
-      <h2>Skills</h2>
-    </div>
-    <div class="tools-box">
-      <br /><br />
-      <div class="programming-languages">
-        <div class="skill-title">
-          <h4>Programming Language</h4>
-        </div>
-        <div class="skill">
-          <object data="img/java.svg" type="image/svg+xml">Java</object>
-          <br />
-          &nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;
-        </div>
-        <div class="skill">
-          <object data="img/spring.svg" type="image/svg+xml">Spring boot</object>
-          <br />
-          &nbsp;&nbsp;&nbsp;Spring boot&nbsp;&nbsp;&nbsp;
-        </div>
-        <div class="skill">
-          <object data="img/python.svg" type="image/svg+xml">Python</object>
-          &nbsp;&nbsp;&nbsp;Python&nbsp;&nbsp;&nbsp;
-        </div>
-      </div>
-      <br /><br />
-      <div class="skill-title">
-        <h4>data pipeline tools</h4>
-      </div>
-      <div class="skills-container">
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/Airflow.svg" type="image/svg+xml">AirFlow</object>
-          </div>
-          <span class="skill-name">AirFlow</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/talend.svg" type="image/svg+xml">Talend</object>
-          </div>
-          <span class="skill-name">Talend</span>
-        </div>
-      </div>
-      <br /><br />
-      <div class="skill-title">
-        <h4>Big Data tools</h4>
-      </div>
-
-      <div class="skills-container">
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/docker.svg" type="image/svg+xml">Docker</object>
-          </div>
-          <span class="skill-name">Docker</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/apache.svg" type="image/svg+xml">Apache spark</object>
-          </div>
-          <span class="skill-name">Apache spark</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/hadoop.svg" type="image/svg+xml">hadoop</object>
-          </div>
-          <span class="skill-name">hadoop</span>
-        </div>
-      </div>
-      <br /><br />
-      <div class="web-dev">
-        <div class="skill-title">
-          <h4>Web Development Technology</h4>
-        </div>
-        <div class="skill">
-          <object data="img/html.svg" type="image/svg+xml">HTML</object>
-          &nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;
-        </div>
-        <div class="skill">
-          <object data="img/css.svg" type="image/svg+xml">CSS3</object>
-          &nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;
-        </div>
-        <div class="skill">
-          <object data="img/javascript.svg" type="image/svg+xml">
-            JavaScript
-          </object>
-          &nbsp;&nbsp;&nbsp;JavaScript&nbsp;&nbsp;&nbsp;
-        </div>
-        <div class="skill">
-          <object data="img/react.svg" type="image/svg+xml">React</object>
-          &nbsp;&nbsp;&nbsp;react&nbsp;&nbsp;&nbsp;
-        </div>
-      </div>
-      <br /><br />
-      <div class="skill-title">
-        <h4>Database</h4>
-      </div>
-
-      <div class="skills-container">
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/mysql.svg" type="image/svg+xml">MySQL</object>
-          </div>
-          <span class="skill-name">MySQL</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/mongodb.svg" type="image/svg+xml">Mongo DB</object>
-          </div>
-          <span class="skill-name">Mongo DB</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/Postgres.svg" type="image/svg+xml">Postgres</object>
-          </div>
-          <span class="skill-name">Postgres</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/oracle.svg" type="image/svg+xml">oracle</object>
-          </div>
-          <span class="skill-name">Oracle</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">
-            <object data="img/cassandra.svg" type="image/svg+xml">cassandra</object>
-          </div>
-          <span class="skill-name">Cassandra</span>
-        </div>
-        <br />
-        <br />
-        <div class="programming-languages">
-          <div class="skill-title">
-            <h4>Data Visualizations</h4>
-          </div>
-
-          <div class="skill">
-            <object data="img/powerBI.svg" type="image/svg+xml">Power BI</object>
-
-            &nbsp;&nbsp;&nbsp;Power BI&nbsp;&nbsp;&nbsp;
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div>
-      <span>Next steps?</span>
-
-      <h4>Don&apos;t be a Stranger!</h4>
-
-      <p>
-        Feel free to drop me an email if you believe we'd make a great team
-        and would like to collaborate. Let's make our work together not only
-        productive but also enjoyable!
-      </p>
-
-      <a href="mailto:lokmaneakkouh10@gmail.com" class="cta cta2">Get in Touch</a>
-    </div>
-
-    <aside class="contact-social-links social-links">
-      <a href="https://github.com/lokmane101" target="_blank" class="social github">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(4,4)">
-              <path
-                d="M32,6c-14.359,0 -26,11.641 -26,26c0,12.277 8.512,22.56 19.955,25.286c-0.592,-0.141 -1.179,-0.299 -1.755,-0.479v-5.957c0,0 -0.975,0.325 -2.275,0.325c-3.637,0 -5.148,-3.245 -5.525,-4.875c-0.229,-0.993 -0.827,-1.934 -1.469,-2.509c-0.767,-0.684 -1.126,-0.686 -1.131,-0.92c-0.01,-0.491 0.658,-0.471 0.975,-0.471c1.625,0 2.857,1.729 3.429,2.623c1.417,2.207 2.938,2.577 3.721,2.577c0.975,0 1.817,-0.146 2.397,-0.426c0.268,-1.888 1.108,-3.57 2.478,-4.774c-6.097,-1.219 -10.4,-4.716 -10.4,-10.4c0,-2.928 1.175,-5.619 3.133,-7.792c-0.2,-0.567 -0.533,-1.714 -0.533,-3.583c0,-1.235 0.086,-2.751 0.65,-4.225c0,0 3.708,0.026 7.205,3.338c1.614,-0.47 3.341,-0.738 5.145,-0.738c1.804,0 3.531,0.268 5.145,0.738c3.497,-3.312 7.205,-3.338 7.205,-3.338c0.567,1.474 0.65,2.99 0.65,4.225c0,2.015 -0.268,3.19 -0.432,3.697c1.898,2.153 3.032,4.802 3.032,7.678c0,5.684 -4.303,9.181 -10.4,10.4c1.628,1.43 2.6,3.513 2.6,5.85v8.557c-0.576,0.181 -1.162,0.338 -1.755,0.479c11.443,-2.726 19.955,-13.009 19.955,-25.286c0,-14.359 -11.641,-26 -26,-26zM33.813,57.93c-0.599,0.042 -1.203,0.07 -1.813,0.07c0.61,0 1.213,-0.029 1.813,-0.07zM37.786,57.346c-1.164,0.265 -2.357,0.451 -3.575,0.554c1.218,-0.103 2.411,-0.29 3.575,-0.554zM32,58c-0.61,0 -1.214,-0.028 -1.813,-0.07c0.6,0.041 1.203,0.07 1.813,0.07zM29.788,57.9c-1.217,-0.103 -2.411,-0.289 -3.574,-0.554c1.164,0.264 2.357,0.451 3.574,0.554z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
-
-      <a href="https://linkedin.com/in/lokmane-akkouh" target="_blank" class="social linkedin">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(5.12,5.12)">
-              <path
-                d="M9,4c-2.74952,0 -5,2.25048 -5,5v32c0,2.74952 2.25048,5 5,5h32c2.74952,0 5,-2.25048 5,-5v-32c0,-2.74952 -2.25048,-5 -5,-5zM9,6h32c1.66848,0 3,1.33152 3,3v32c0,1.66848 -1.33152,3 -3,3h-32c-1.66848,0 -3,-1.33152 -3,-3v-32c0,-1.66848 1.33152,-3 3,-3zM14,11.01172c-1.09522,0 -2.08078,0.32736 -2.81055,0.94141c-0.72977,0.61405 -1.17773,1.53139 -1.17773,2.51367c0,1.86718 1.61957,3.32281 3.67969,3.4668c0.0013,0.00065 0.0026,0.0013 0.00391,0.00195c0.09817,0.03346 0.20099,0.05126 0.30469,0.05273c2.27301,0 3.98828,-1.5922 3.98828,-3.52148c-0.00018,-0.01759 -0.00083,-0.03518 -0.00195,-0.05274c-0.10175,-1.90023 -1.79589,-3.40234 -3.98633,-3.40234zM14,12.98828c1.39223,0 1.94197,0.62176 2.00195,1.50391c-0.01215,0.85625 -0.54186,1.51953 -2.00195,1.51953c-1.38541,0 -2.01172,-0.70949 -2.01172,-1.54492c0,-0.41771 0.15242,-0.7325 0.47266,-1.00195c0.32023,-0.26945 0.83428,-0.47656 1.53906,-0.47656zM11,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-5.86523v-13.13477c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM20,19c-0.55226,0.00006 -0.99994,0.44774 -1,1v19c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10c0,-0.82967 0.22639,-1.65497 0.625,-2.19531c0.39861,-0.54035 0.90147,-0.86463 1.85742,-0.84766c0.98574,0.01695 1.50758,0.35464 1.90234,0.88477c0.39477,0.53013 0.61523,1.32487 0.61523,2.1582v10c0.00006,0.55226 0.44774,0.99994 1,1h6c0.55226,-0.00006 0.99994,-0.44774 1,-1v-10.73828c0,-2.96154 -0.87721,-5.30739 -2.38086,-6.89453c-1.50365,-1.58714 -3.59497,-2.36719 -5.80664,-2.36719c-2.10202,0 -3.70165,0.70489 -4.8125,1.42383v-0.42383c-0.00006,-0.55226 -0.44774,-0.99994 -1,-1zM12,21h4v12.13477v4.86523h-4zM21,21h4v1.56055c0.00013,0.43 0.27511,0.81179 0.68291,0.94817c0.40781,0.13638 0.85714,-0.00319 1.11591,-0.34661c0,0 1.57037,-2.16211 5.01367,-2.16211c1.75333,0 3.25687,0.58258 4.35547,1.74219c1.0986,1.15961 1.83203,2.94607 1.83203,5.51953v9.73828h-4v-9c0,-1.16667 -0.27953,-2.37289 -1.00977,-3.35352c-0.73023,-0.98062 -1.9584,-1.66341 -3.47266,-1.68945c-1.52204,-0.02703 -2.77006,0.66996 -3.50195,1.66211c-0.73189,0.99215 -1.01562,2.21053 -1.01562,3.38086v9h-4z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
-
-      <a href="https://x.com/AkkouhLokmane1" target="_blank" class="social twitter">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(5.12,5.12)">
-              <path
-                d="M11,4c-3.85433,0 -7,3.14567 -7,7v28c0,3.85433 3.14567,7 7,7h28c3.85433,0 7,-3.14567 7,-7v-28c0,-3.85433 -3.14567,-7 -7,-7zM11,6h28c2.77367,0 5,2.22633 5,5v28c0,2.77367 -2.22633,5 -5,5h-28c-2.77367,0 -5,-2.22633 -5,-5v-28c0,-2.77367 2.22633,-5 5,-5zM13.08594,13l9.22266,13.10352l-9.30859,10.89648h2.5l7.9375,-9.29297l6.53906,9.29297h7.9375l-10.125,-14.38672l8.21094,-9.61328h-2.5l-6.83984,8.00977l-5.63672,-8.00977zM16.91406,15h3.06445l14.10742,20h-3.06445z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
-
-      <a href="mailto:lokmaneakkouh10@gmail.com" target="_blank" class="social behance">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-          width="50px" height="50px">
-          <g fill="#d0d4d4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <g transform="scale(5.12,5.12)">
-              <path
-                d="M43.75391,6.40234c-1.2177,-0.05335 -2.45911,0.31055 -3.48242,1.06641l-2.74609,2.02734l-12.52539,9.25977l-12.4082,-9.17187c-0.17292,-0.16897 -0.4012,-0.26957 -0.64258,-0.2832h0.25l-2.46484,-1.82422c-1.02397,-0.75773 -2.26723,-1.12367 -3.48633,-1.07031c-1.2191,0.05336 -2.4131,0.52522 -3.33984,1.43945c-1.17726,1.16068 -1.9082,2.78413 -1.9082,4.56445v3.43359c-0.01457,0.09777 -0.01457,0.19715 0,0.29492v23.36133c0,1.92119 1.57881,3.5 3.5,3.5h7.5c0.55226,-0.00006 0.99994,-0.44774 1,-1v-16.62695l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0l11.40625,-8.43164v16.62695c0.00006,0.55226 0.44774,0.99994 1,1h7.5c1.92119,0 3.5,-1.57881 3.5,-3.5v-23.38086c0.01129,-0.08622 0.01129,-0.17355 0,-0.25977v-3.44922c0,-1.75846 -0.70954,-3.37437 -1.87109,-4.53711c-0.03357,-0.03357 -0.04482,-0.04287 -0.03125,-0.0293c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.92656,-0.91221 -2.12019,-1.3822 -3.33789,-1.43555zM43.64453,8.40039c0.7563,0.02965 1.48952,0.3165 2.04492,0.86328c0.01891,0.01867 0.03272,0.03277 0.02344,0.02344c0.79645,0.79726 1.28711,1.9015 1.28711,3.12305v3.08594l-8,5.91211v-10.4082c0.00042,-0.0339 -0.00088,-0.0678 -0.00391,-0.10156l2.46289,-1.82031c0.00065,0 0.0013,0 0.00195,0c0.64864,-0.47915 1.42729,-0.70739 2.18359,-0.67773zM6.35742,8.40625c0.75715,-0.02964 1.53847,0.19746 2.1875,0.67773l2.45898,1.81836c-0.00289,0.03247 -0.0042,0.06506 -0.00391,0.09766v10.4082l-8,-5.91211v-3.08594c0,-1.23567 0.50176,-2.3413 1.3125,-3.14062c0.55526,-0.54776 1.28777,-0.83364 2.04492,-0.86328zM37,12.37109v10.51563l-12,8.86914l-12,-8.86914v-10.51367l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0zM3,17.98242l8,5.91406v17.10352h-6.5c-0.84081,0 -1.5,-0.65919 -1.5,-1.5zM47,17.98242v21.51758c0,0.84081 -0.65919,1.5 -1.5,1.5h-6.5v-17.10352z">
-              </path>
-            </g>
-          </g>
-        </svg>
-      </a>
-    </aside>
-  </section>
-
-  <footer>
-    <p>Designed and Developed by <span>Akkouh Lokmane</span> • Lyon, France</p>
-  </footer>
-  <script type="text/javascript" src="js/main.js"></script>
+  <footer class="footer container"><p class="footer-brand"><span class="brand-symbol"><img src="img/brand/v2/lokmane-akkouh-symbol.svg" width="256" height="256" alt="" loading="lazy"></span><span>© <span id="year">2026</span> Lokmane Akkouh</span></p><a href="#home">Back to top</a></footer>
 </body>
-
 </html>

@@ -1,0 +1,143 @@
+/* Progressive enhancement; the original image links still work without JavaScript. */
+.diagram-viewer {
+  box-sizing: border-box;
+  width: 1320px;
+  max-width: calc(100% - 48px);
+  height: min(92dvh, 1040px);
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 24px;
+  border: 0;
+  border-radius: 0;
+  background: var(--paper, #b8cdd9);
+  color: var(--ink, #1c3547);
+  color-scheme: light;
+  font-family: var(--font-body, Satoshi, Arial, sans-serif);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+.diagram-viewer[open] {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  gap: 16px;
+  animation: diagram-arrive var(--motion-base, 240ms) var(--motion-ease, ease-out);
+}
+.diagram-viewer::backdrop { background: rgb(15 31 42 / 88%); }
+.diagram-viewer[open]::backdrop { animation: diagram-backdrop var(--motion-fast, 160ms) ease-out; }
+@keyframes diagram-arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes diagram-backdrop { from { opacity: 0; } to { opacity: 1; } }
+.diagram-viewer .diagram-viewer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.diagram-viewer .diagram-viewer__title {
+  min-width: 0;
+  margin: 0;
+  font: 600 clamp(19px, 2.1vw, 28px)/1.15 var(--font-heading, 'General Sans', Arial, sans-serif);
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+.diagram-viewer .diagram-viewer__toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.diagram-viewer button,
+.diagram-viewer .diagram-viewer__source {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 0;
+  background: var(--paper-deep, #a8c0cf);
+  color: var(--ink, #1c3547);
+  font: 600 14px/1.4 var(--font-body, Satoshi, Arial, sans-serif);
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform var(--motion-fast, 160ms) var(--motion-ease, ease-out);
+}
+.diagram-viewer button[aria-pressed='true'],
+.diagram-viewer button.diagram-viewer__close {
+  background: var(--ink, #1c3547);
+  color: var(--white, #f0f5f8);
+}
+.diagram-viewer button.diagram-viewer__close { flex: 0 0 auto; }
+.diagram-viewer button:hover:not(:disabled),
+.diagram-viewer .diagram-viewer__source:hover { text-decoration: underline; }
+.diagram-viewer button:active:not(:disabled),
+.diagram-viewer .diagram-viewer__source:active { transform: translateY(1px); }
+.diagram-viewer button:disabled { opacity: .55; cursor: wait; }
+.diagram-viewer :focus-visible { outline: 3px solid var(--ink, #1c3547); outline-offset: 4px; }
+.diagram-viewer .diagram-viewer__status {
+  flex: 1 1 180px;
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.diagram-viewer .diagram-viewer__status:empty { display: none; }
+.diagram-viewer .diagram-viewer__viewport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  background: var(--white, #f0f5f8);
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+.diagram-viewer .diagram-viewer__image {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.diagram-viewer .diagram-viewer__image[hidden] { display: none; }
+.diagram-viewer .diagram-viewer__viewport.is-actual-size { display: block; }
+.diagram-viewer .is-actual-size .diagram-viewer__image {
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: initial;
+}
+.diagram-viewer .diagram-viewer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+}
+.diagram-viewer .diagram-viewer__description {
+  max-width: 75ch;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.diagram-viewer .diagram-viewer__source { flex: 0 0 auto; }
+@media (max-width: 700px) {
+  .diagram-viewer {
+    max-width: calc(100% - 24px);
+    height: calc(100dvh - 24px);
+    max-height: calc(100dvh - 24px);
+    padding: 16px;
+  }
+  .diagram-viewer[open] { gap: 12px; }
+  .diagram-viewer .diagram-viewer__header { align-items: flex-start; gap: 12px; }
+  .diagram-viewer .diagram-viewer__footer { align-items: stretch; flex-direction: column; gap: 8px; }
+  .diagram-viewer .diagram-viewer__description { font-size: 13px; }
+  .diagram-viewer .diagram-viewer__status { flex-basis: 100%; margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .diagram-viewer[open], .diagram-viewer[open]::backdrop { animation: none; }
+  .diagram-viewer button,
+  .diagram-viewer .diagram-viewer__source { transition: none; }
+}
